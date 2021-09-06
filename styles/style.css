@@ -1,29 +1,4 @@
-@font-face {
-  font-family: Nunito;
-  src: url(Nunito-Regular.ttf);
-}
-
-@font-face {
-  font-family: Nunito;
-  src: url(Nunito-Light.ttf);
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: Gilroy;
-  src: url(Gilroy-Light.otf);
-}
-
-@font-face {
-  font-family: Gilroy;
-  src: url(Gilroy-ExtraBold.otf);
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: Neue;
-  src: url(BebasNeue-Regular.otf);
-}
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@200;400;700&family=Roboto:wght@900&display=swap");
 
 * {
   margin: 0;
@@ -32,13 +7,14 @@
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: Nunito;
+  font-family: "Nunito";
+  font-weight: 400;
   color: #fff;
 }
 
 body {
   background: #1b262c;
-  font-family: Nunito;
+  font-family: "Nunito";
   color: #fff;
 }
 
@@ -127,14 +103,14 @@ body {
 }
 
 .about-title {
-  font-family: Neue;
+  font-family: "Bebas Neue";
   letter-spacing: 0.2em;
   font-size: 1.3em;
   margin-bottom: 3vh;
 }
 
 .about-name {
-  font-family: Gilroy;
+  font-family: "Gilroy";
   font-weight: bold;
   font-size: 4.5em;
   line-height: 1em;
@@ -143,11 +119,11 @@ body {
 }
 
 .about-intro {
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .about-intro span {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .about-right {
