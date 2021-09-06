@@ -1,0 +1,90 @@
+@font-face {
+  font-family: Nunito;
+  src: url(Nunito-Regular.ttf);
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(Gilroy-Light.otf);
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(Gilroy-ExtraBold.otf);
+  font-weight: bold;
+}
+
+* {
+  font-family: Nunito;
+  color: #fff;
+}
+
+body {
+  background: #1b262c;
+  font-family: Nunito;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 2%;
+  height: 5vh;
+  width: 100vw;
+  font-size: 1.1rem;
+}
+
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  margin-left: 4%;
+}
+
+.navbar a:hover {
+  font-weight: bolder;
+}
+
+.nav-active {
+  font-weight: bolder;
+  border-bottom: 1px solid #3282b8;
+}
+
+.nav-active:before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  left: 0;
+  bottom: -1px;
+
+  background-color: #1b262c;
+  height: 1.1px;
+}
+
+.nav-active:after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  right: 0;
+  bottom: -1px;
+
+  background-color: #1b262c;
+  height: 1.1px;
+}
+
+.navbar button {
+  background-color: #3282b8;
+  display: inline;
+  font-size: 1.1rem;
+  border: 0;
+  padding: 0.2% 1.5%;
+  border-radius: 6px;
+  margin: 0 10% 0 4%;
+}
+
+.navbar-logo {
+  margin-left: 10%;
+  margin-right: auto;
+}
