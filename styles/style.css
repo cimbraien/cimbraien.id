@@ -4,6 +4,12 @@
 }
 
 @font-face {
+  font-family: Nunito;
+  src: url(Nunito-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
   font-family: Gilroy;
   src: url(Gilroy-Light.otf);
 }
@@ -14,7 +20,18 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: Neue;
+  src: url(BebasNeue-Regular.otf);
+}
+
 * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
   font-family: Nunito;
   color: #fff;
 }
@@ -23,17 +40,15 @@ body {
   background: #1b262c;
   font-family: Nunito;
   color: #fff;
-  margin: 0;
-  padding: 0;
 }
 
 .navbar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 2%;
+  margin-top: 3vh;
   height: 5vh;
-  width: 100vw;
+  width: 100%;
   font-size: 1.1rem;
 }
 
@@ -82,9 +97,67 @@ body {
   padding: 0.2% 1.5%;
   border-radius: 6px;
   margin: 0 10% 0 4%;
+  transition: all 0.5s linear;
+}
+
+.navbar button:hover {
+  background-color: #bbe1fa;
+  color: #0f4c75;
 }
 
 .navbar-logo {
   margin-left: 10%;
   margin-right: auto;
+}
+
+#about {
+  margin: 0;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  height: 70vh;
+}
+
+.about-left {
+  margin-left: 10vw;
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.about-title {
+  font-family: Neue;
+  letter-spacing: 0.2em;
+  font-size: 1.3em;
+  margin-bottom: 3vh;
+}
+
+.about-name {
+  font-family: Gilroy;
+  font-weight: bold;
+  font-size: 4.5em;
+  line-height: 1em;
+  margin-left: -0.05em;
+  margin-bottom: 3vh;
+}
+
+.about-intro {
+  font-weight: 300;
+}
+
+.about-intro span {
+  font-weight: bold;
+}
+
+.about-right {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#about img {
+  height: 100%;
+  padding-right: 10vw;
 }
