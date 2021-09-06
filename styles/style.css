@@ -29,6 +29,7 @@ body {
 }
 
 .navbar a {
+  position: relative;
   text-decoration: none;
   margin-left: 4%;
 }
