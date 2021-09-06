@@ -29,17 +29,16 @@ body {
 }
 
 .navbar a {
-  position: relative;
   text-decoration: none;
   margin-left: 4%;
 }
 
 .navbar a:hover {
-  font-weight: bolder;
+  text-shadow: 0 0 0.05px white, 0 0 0.05px white, 0 0 0.05px white;
 }
 
 .nav-active {
-  font-weight: bolder;
+  text-shadow: 0 0 0.05px white, 0 0 0.05px white, 0 0 0.05px white;
   border-bottom: 1px solid #3282b8;
 }
 
