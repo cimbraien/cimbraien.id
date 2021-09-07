@@ -1,4 +1,4 @@
-const navbuttons = document.querySelectorAll(".navbar a");
+const navbuttons = document.querySelectorAll(".navbar-items .sections");
 let activeindex = 0;
 
 for (let i = 0; i < navbuttons.length; i++) {
@@ -11,3 +11,15 @@ for (let i = 0; i < navbuttons.length; i++) {
     activeindex = button.index;
   });
 }
+
+const body = document.querySelector("body");
+const contents = document.querySelector(".contents");
+const indev = document.querySelector(".indev");
+indev.addEventListener("click", () => {
+  indev.style.opacity = 0;
+  contents.style.opacity = 1;
+  setTimeout(() => {
+    indev.style.display = "none";
+    body.classList.remove("no-scroll");
+  }, 1500);
+});

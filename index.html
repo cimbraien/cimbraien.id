@@ -2,34 +2,47 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Kimbrian Marshall</title>
     <link rel="icon" href="./static/favicon.ico" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link rel="stylesheet" href="./styles/indev.css" />
   </head>
-  <body>
-    <script src="./scripts/script.js" async defer></script>
-    <div class="navbar">
-      <span class="navbar-logo">LOGO</span>
-      <a href="#" class="nav-active">About</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Skills</a>
-      <button class="contact-btn">Contact</button>
+  <body class="no-scroll">
+    <div class="indev">
+      <p class="indev-message">This website is still in development...</p>
+      <p class="enter-message">Click anywhere to enter</p>
     </div>
-    <div id="about">
-      <div class="about-left">
-        <p class="about-title">BACKEND DEVELOPER</p>
-        <p class="about-name">KIMBRIAN MARSHALL</p>
-        <p class="about-intro">
-          I'm a backend developer based in Jakarta, Indonesia.<br />
-          Scroll down to see some <span>projects I have done.</span>
-        </p>
+    <div class="contents">
+      <script src="./scripts/script.js" async defer></script>
+      <div class="navbar">
+        <div class="navbar-items">
+          <span class="navbar-logo">LOGO</span>
+          <a href="#about" class="sections nav-active">About</a>
+          <a href="#" class="sections">Portfolio</a>
+          <a href="#" class="sections">Skills</a>
+          <a href="https://github.com/cimbraien" class="contact-btn">
+            <button>Contact</button>
+          </a>
+        </div>
       </div>
-      <div class="about-right">
-        <img
-          src="./static/about-photo.png"
-          alt="Kimbrian's photo"
-          class="photo"
-        />
+      <div id="about">
+        <div class="about-left">
+          <p class="about-title">BACKEND DEVELOPER</p>
+          <p class="about-name">KIMBRIAN MARSHALL</p>
+          <p class="about-intro">
+            I'm a backend developer based in Jakarta, Indonesia.<br />
+            Scroll down to see some <span>projects I have done.</span>
+          </p>
+        </div>
+        <div class="about-right">
+          <img
+            src="./static/about-photo.png"
+            alt="Kimbrian's photo"
+            class="photo"
+          />
+        </div>
       </div>
     </div>
   </body>

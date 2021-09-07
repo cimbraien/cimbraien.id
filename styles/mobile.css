@@ -1,0 +1,36 @@
+@media (max-width: 600px) {
+  .navbar-items .sections {
+    display: none;
+  }
+
+  .contact-btn {
+    width: 20%;
+  }
+
+  #about {
+    flex-direction: column;
+  }
+
+  .about-left {
+    flex: 100%;
+  }
+
+  .about-name {
+    font-size: 3em;
+  }
+
+  .about-intro {
+    font-size: 1em;
+    margin-bottom: 5vh;
+  }
+
+  .about-right {
+    flex: 100%;
+  }
+
+  #about img {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+  }
+}

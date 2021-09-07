@@ -19,6 +19,19 @@ body {
 }
 
 .navbar {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(27, 38, 44, 1) 70%
+  );
+  height: 10vh;
+  width: 100%;
+}
+
+.navbar-items {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -28,13 +41,13 @@ body {
   font-size: 1.1rem;
 }
 
-.navbar a {
+.navbar-items .sections {
   position: relative;
   text-decoration: none;
   margin-left: 4%;
 }
 
-.navbar a:hover {
+.navbar-items .sections:hover {
   text-shadow: 0 0 0.05px white, 0 0 0.05px white, 0 0 0.05px white;
 }
 
@@ -65,18 +78,21 @@ body {
   height: 1.1px;
 }
 
-.navbar button {
-  background-color: #3282b8;
-  display: inline;
-  font-size: 1.1rem;
-  border: 0;
-  padding: 0.2% 1.5%;
-  border-radius: 6px;
+.contact-btn {
   margin: 0 10% 0 4%;
+  text-decoration: none;
+  width: 9vw;
+}
+
+.navbar-items button {
+  width: 100%;
+  background-color: #3282b8;
+  font-size: 1.1rem;
+  border-radius: 6px;
   transition: all 0.5s linear;
 }
 
-.navbar button:hover {
+.navbar-items button:hover {
   background-color: #bbe1fa;
   color: #0f4c75;
 }
@@ -88,7 +104,7 @@ body {
 
 #about {
   margin: 0;
-  margin-top: 10vh;
+  padding-top: 16vh;
   display: flex;
   flex-direction: row;
   height: 70vmin;
@@ -99,7 +115,7 @@ body {
   margin-top: 15vmin;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  flex: 50%;
 }
 
 .about-title {
@@ -127,7 +143,7 @@ body {
 }
 
 .about-right {
-  width: 50%;
+  flex: 50%;
   justify-content: center;
   align-items: center;
   display: flex;
