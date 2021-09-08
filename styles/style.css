@@ -246,3 +246,40 @@ body {
   left: 5%;
   border-radius: 20px;
 }
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer p {
+  margin-top: 2vh;
+  font-weight: 200;
+}
+
+.footer-bold {
+  font-weight: 700;
+}
+
+.footer-icons {
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 20vw;
+}
+
+.footer-icons a {
+  color: white;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.footer-rights {
+  padding-top: 4vh;
+  font-size: 0.8em;
+}
