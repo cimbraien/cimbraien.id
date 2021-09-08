@@ -10,17 +10,21 @@
     <link rel="stylesheet" href="./styles/indev.css" />
   </head>
   <body class="no-scroll">
+    <script src="./scripts/script.js" async defer></script>
+    <script
+      src="https://kit.fontawesome.com/bc1265d980.js"
+      crossorigin="anonymous"
+    ></script>
     <div class="indev">
       <p class="indev-message">This website is still in development...</p>
       <p class="enter-message">Click anywhere to enter</p>
     </div>
     <div class="contents">
-      <script src="./scripts/script.js" async defer></script>
       <div class="navbar">
         <div class="navbar-items">
           <span class="navbar-logo">LOGO</span>
           <a href="#about" class="sections nav-active">About</a>
-          <a href="#" class="sections">Portfolio</a>
+          <a href="#portfolio" class="sections">Portfolio</a>
           <a href="#" class="sections">Skills</a>
           <a href="https://github.com/cimbraien" class="contact-btn">
             <button>Contact</button>
@@ -42,6 +46,38 @@
             alt="Kimbrian's photo"
             class="photo"
           />
+        </div>
+      </div>
+      <div id="portfolio">
+        <div class="portfolio-left">
+          <p class="portfolio-title">PORTFOLIO</p>
+          <p class="portfolio-projectname">CrowdFinder</p>
+          <p class="portfolio-projectdesc">
+            It's an app to gather crowds. Whether you have an event or you just
+            want to meet new people with similar interests and build a new
+            community.
+          </p>
+          <div class="portfolio-projectlink">
+            <a href="https://cimbraien.id/crowdfinder/">Live Demo </a
+            ><span class="linkicon fas fa-external-link-alt"></span>
+          </div>
+          <div class="portfolio-image">
+            <p class="portfolio-image-text">Registration & Login Page</p>
+            <div class="img-container"></div>
+            <img src="./static/crowdfinder1.png" />
+          </div>
+        </div>
+        <div class="portfolio-right">
+          <div class="portfolio-image">
+            <p class="portfolio-image-text">Profile Page</p>
+            <div class="img-container"></div>
+            <img src="./static/crowdfinder2.png" />
+          </div>
+          <div class="portfolio-image">
+            <p class="portfolio-image-text">Profile Page</p>
+            <div class="img-container"></div>
+            <img src="./static/crowdfinder3.png" />
+          </div>
         </div>
       </div>
     </div>
