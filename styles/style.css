@@ -177,6 +177,11 @@ body::-webkit-scrollbar {
   margin-left: 10vw;
 }
 
+.portfolio-fade {
+  opacity: 1;
+  transition: all 0.25s ease;
+}
+
 .portfolio-right {
   display: flex;
   flex: 50%;
@@ -192,11 +197,25 @@ body::-webkit-scrollbar {
 }
 
 .portfolio-projectname {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20vh;
+}
+
+.portfolio-projectname-text {
   font-family: "Gilroy";
   font-weight: bold;
   font-size: 2em;
-  margin-left: 2vw;
-  margin-top: 20vh;
+}
+
+.portfolio-projectname span {
+  font-size: 1em;
+  opacity: 0.2;
+  margin: auto 1vw;
+}
+
+.portfolio-projectname span:hover {
+  opacity: 0.7;
 }
 
 .portfolio-projectdesc {
