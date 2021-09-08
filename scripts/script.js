@@ -2,22 +2,14 @@
 const navbuttons = document.querySelectorAll(".navbar-items .sections");
 let activeindex = 0;
 
-for (let i = 0; i < navbuttons.length; i++) {
-  const button = navbuttons[i];
-  button.index = i;
-  button.addEventListener("click", () => {
-    if (button.classList.contains("nav-active")) return;
-    navbuttons[activeindex].classList.remove("nav-active");
-    button.classList.add("nav-active");
-    activeindex = button.index;
-  });
-}
 const OFFSET = {
-  about: 0,
+  about: -1,
   portfolio: 550,
+  contact: 1520,
 };
 
 window.addEventListener("scroll", () => {
+  // console.log(window.pageYOffset);
   const sections = Object.keys(OFFSET);
   for (let i = 0; i < sections.length; i++) {
     if (window.pageYOffset > OFFSET[sections[i]]) {
@@ -94,3 +86,33 @@ function renderProject() {
     }
   }, 250);
 }
+
+// ! Send contact form
+const sendButton = document.querySelector("input[type='submit']");
+const nameElement = document.querySelector("#contact-name");
+const emailElement = document.querySelector("#contact-email");
+const contentElement = document.querySelector("#contact-content");
+
+document.getElementById("contact-form").addEventListener("submit", (e) => {
+  e.preventDefault();
+});
+
+sendButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  const payload = {
+    name: nameElement.value,
+    email: emailElement.value,
+    content: contentElement.value,
+  };
+  fetch("https://cimbraien.id/contact/", {
+    method: "POST",
+    body: JSON.stringify(payload),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+    .then((res) => res.json())
+    .then((res) => {
+      console.log("Contact form sent");
+    });
+});

@@ -10,11 +10,11 @@ const projects = [
       },
       {
         caption: "Profile Page",
-        url: "./static/crowdfinder1.png",
+        url: "./static/crowdfinder2.png",
       },
       {
         caption: "Home Page",
-        url: "./static/crowdfinder1.png",
+        url: "./static/crowdfinder3.png",
       },
     ],
   },

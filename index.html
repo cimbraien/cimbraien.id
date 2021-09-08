@@ -20,15 +20,15 @@
           <span class="navbar-logo">LOGO</span>
           <a href="#about" class="sections nav-active">About</a>
           <a href="#portfolio" class="sections">Portfolio</a>
-          <a href="#" class="sections">Skills</a>
-          <a href="https://github.com/cimbraien" class="contact-btn">
+          <a href="#contact" class="sections">Contact</a>
+          <!-- <a href="https://github.com/cimbraien" class="contact-btn">
             <button>Contact</button>
-          </a>
+          </a> -->
         </div>
       </div>
       <div id="about">
         <div class="about-left">
-          <p class="about-title">BACKEND DEVELOPER</p>
+          <p class="section-title">BACKEND DEVELOPER</p>
           <p class="about-name">KIMBRIAN MARSHALL</p>
           <p class="about-intro">
             I'm a backend developer based in Jakarta, Indonesia.<br />
@@ -45,7 +45,7 @@
       </div>
       <div id="portfolio">
         <div class="portfolio-left">
-          <p class="portfolio-title">PORTFOLIO</p>
+          <p class="section-title">PORTFOLIO</p>
 
           <div class="portfolio-fade">
             <div class="portfolio-projectname">
@@ -85,6 +85,28 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div id="contact">
+        <p class="section-title">CONTACT</p>
+        <form id="contact-form">
+          <label for="contact-name">What's your name?</label>
+          <input type="text" id="contact-name" placeholder="John Doe" />
+          <label for="contact-email">And your email address?</label>
+          <input
+            type="text"
+            id="contact-email"
+            placeholder="example@mail.com"
+          />
+          <label for="contact-content">What do you wanna talk about?</label>
+          <textarea
+            id="contact-content"
+            spellcheck="false"
+            rows="5"
+            placeholder="Hi, I would like to know more about you."
+          ></textarea>
+          <input type="submit" value="Send ►" />
+        </form>
       </div>
 
       <div id="footer">
