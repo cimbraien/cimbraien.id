@@ -16,6 +16,7 @@ body {
   background: #1b262c;
   font-family: "Nunito";
   color: #fff;
+  overflow: hidden;
 }
 
 .navbar {
