@@ -38,6 +38,10 @@ body::-webkit-scrollbar {
   width: 100%;
 }
 
+.navbar-logo {
+  height: 100%;
+}
+
 .navbar-items {
   display: flex;
   justify-content: flex-end;
@@ -331,10 +335,18 @@ body::-webkit-scrollbar {
 #footer {
   display: flex;
   flex-direction: column;
-  padding-top: 10vh;
+  padding-top: 16vh;
   padding-bottom: 10vh;
   justify-content: center;
   align-items: center;
+}
+
+.footer-logo {
+  width: 8%;
+}
+
+.footer-logo img {
+  width: 100%;
 }
 
 #footer p {
