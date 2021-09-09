@@ -121,6 +121,25 @@ sendButton.addEventListener("click", (e) => {
   })
     .then((res) => res.json())
     .then((res) => {
-      console.log("Contact form sent");
+      displaySuccess();
     });
 });
+
+function displaySuccess() {
+  nameElement.value = "";
+  emailElement.value = "";
+  contentElement.value = "";
+  const initialValues = [
+    nameElement.getAttribute("placeholder"),
+    emailElement.getAttribute("placeholder"),
+    contentElement.getAttribute("placeholder"),
+  ];
+  nameElement.setAttribute("placeholder", "Message sent!");
+  emailElement.setAttribute("placeholder", "Message sent!");
+  contentElement.setAttribute("placeholder", "Message sent!");
+  setTimeout(() => {
+    nameElement.setAttribute("placeholder", initialValues[0]);
+    emailElement.setAttribute("placeholder", initialValues[1]);
+    contentElement.setAttribute("placeholder", initialValues[2]);
+  }, 4000);
+}
