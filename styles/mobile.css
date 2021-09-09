@@ -3,15 +3,31 @@
     display: none;
   }
 
+  .nav-active {
+    display: inline-flex !important;
+    border: none;
+  }
+
+  .nav-active:before,
+  .nav-active:after {
+    display: none;
+  }
+
   .contact-btn {
     width: 20%;
   }
 
-  #about {
+  #about,
+  #portfolio,
+  #contact {
     flex-direction: column;
+    height: auto;
   }
 
-  .about-left {
+  .about-left,
+  .about-right,
+  .portfolio-left,
+  .portfolio-right {
     flex: 100%;
   }
 
@@ -22,15 +38,41 @@
   .about-intro {
     font-size: 1em;
     margin-bottom: 5vh;
-  }
-
-  .about-right {
-    flex: 100%;
+    margin-right: 5vw;
   }
 
   #about img {
     width: 80%;
     height: auto;
     margin-left: 10%;
+  }
+
+  .portfolio-projectname {
+    margin-top: 5vh;
+  }
+
+  .portfolio-projectdesc {
+    margin-right: 5vw;
+  }
+
+  .portfolio-right {
+    margin-right: 0;
+    margin-left: 10vw;
+  }
+
+  #contact label {
+    width: 100%;
+  }
+
+  #contact input {
+    width: 50%;
+  }
+
+  #contact textarea {
+    width: 75%;
+  }
+
+  .footer-icons {
+    width: 75%;
   }
 }

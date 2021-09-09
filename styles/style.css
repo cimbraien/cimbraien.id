@@ -16,9 +16,9 @@ body {
   background: #1b262c;
   font-family: "Nunito";
   color: #fff;
-  -ms-overflow-style: none;
+  /* -ms-overflow-style: none;
   scrollbar-width: none;
-  overflow-y: scroll;
+  overflow-y: scroll; */
 }
 
 body::-webkit-scrollbar {

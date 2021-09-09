@@ -2,11 +2,19 @@
 const navbuttons = document.querySelectorAll(".navbar-items .sections");
 let activeindex = 0;
 
-const OFFSET = {
+const OFFSET_WEB = {
   about: -1,
   portfolio: 550,
   contact: 1520,
 };
+
+const OFFSET_MOBILE = {
+  about: -1,
+  portfolio: 830,
+  contact: 2150,
+};
+
+const OFFSET = window.innerWidth <= 600 ? OFFSET_MOBILE : OFFSET_WEB;
 
 window.addEventListener("scroll", () => {
   // console.log(window.pageYOffset);
@@ -21,7 +29,7 @@ window.addEventListener("scroll", () => {
 });
 
 // ! INDEV MESSAGE
-const body = document.querySelector("body");
+/* const body = document.querySelector("body");
 const contents = document.querySelector(".contents");
 const indev = document.querySelector(".indev");
 indev.addEventListener("click", () => {
@@ -31,7 +39,7 @@ indev.addEventListener("click", () => {
     indev.style.display = "none";
     body.classList.remove("no-scroll");
   }, 1500);
-});
+}); */
 
 // ! PROJECT SLIDER
 const arrowleft = document.querySelector(".fa-chevron-left");
