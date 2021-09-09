@@ -22,9 +22,9 @@ app.post("/", (req, res) => {
     fs.appendFileSync(
       `./messages/${Date.now()}`,
       `
-		Name		: ${req.body.name}
-		Email		:	${req.body.email}
-		Content	  :	${req.body.content}
+		Name : ${req.body.name}
+		Email : ${req.body.email}
+		Content : ${req.body.content}
 		`
     );
     res.status(200).json({ message: "Success" });
