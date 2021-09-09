@@ -24,7 +24,7 @@ app.post("/", (req, res) => {
       `
 		Name		: ${req.body.name}
 		Email		:	${req.body.email}
-		Content	:	${req.body.content}
+		Content	  :	${req.body.content}
 		`
     );
     res.status(200).json({ message: "Success" });
