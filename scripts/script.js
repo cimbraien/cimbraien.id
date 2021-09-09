@@ -118,14 +118,15 @@ sendButton.addEventListener("click", (e) => {
     headers: {
       "Content-Type": "application/json",
     },
-  })
-    .then((res) => res.json())
-    .then((res) => {
-      displaySuccess();
-    });
+  }).then((res) => {
+    if (res.status == 400) {
+      return displaySuccess("Bad email!");
+    }
+    displaySuccess("Message sent!");
+  });
 });
 
-function displaySuccess() {
+function displaySuccess(message) {
   nameElement.value = "";
   emailElement.value = "";
   contentElement.value = "";
@@ -134,9 +135,9 @@ function displaySuccess() {
     emailElement.getAttribute("placeholder"),
     contentElement.getAttribute("placeholder"),
   ];
-  nameElement.setAttribute("placeholder", "Message sent!");
-  emailElement.setAttribute("placeholder", "Message sent!");
-  contentElement.setAttribute("placeholder", "Message sent!");
+  nameElement.setAttribute("placeholder", message);
+  emailElement.setAttribute("placeholder", message);
+  contentElement.setAttribute("placeholder", message);
   setTimeout(() => {
     nameElement.setAttribute("placeholder", initialValues[0]);
     emailElement.setAttribute("placeholder", initialValues[1]);
